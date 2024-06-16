@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type it</title>
+    <style>
+        body {
+            background-image: url("https://files.123freevectors.com/wp-content/original/152473-abstract-blue-random-alphabet-background-image.jpg");
+            /* background-image: url("https://cdn2.vectorstock.com/i/1000x1000/54/41/random-letters-seamless-pattern-vector-8055441.jpg"); */
+            margin: 0;
+            padding: 0;
+        }
+        @keyframes move {
+            0% { transform: translateX(5rem); }
+            50% { transform: translateX(-5rem); }
+            100% { transform: translateX(5rem); }
+        }
+        h1 {
+            background: transparent;
+            /* background-color: #d7dae2; */
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            color: #000000;
+            text-shadow: 2px 2px  #e0e249, 4px 4px 0 #9c9c9c;
+            /* color: #f038c8; */
+            animation: move 5s infinite;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+        }
+       .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+            margin: 40px auto;
+            
+        }
+       .box {
+            width: 30%;
+            height: 100px;
+            border: 1px solid black;
+            margin: 10px;
+            margin-bottom: 5%;
+            box-sizing: border-box;
+            color: #1fffe5;
+            display: flex; justify-content: center; align-items: center; 
+            font-family: Verdana, Geneva, sans-serif;
+            background-image: linear-gradient(to right, #CE0EB9, #9B60A4, #8885C5);
+            text-align: center;
+            box-shadow: 
+            4px -4px 15px 0px #FF1F1F, 
+            12px -11px 7px 0px #FF9376, 
+            20px -5px 7px 0px #FFE264, 
+            20px 6px 7px 0px #F6FF33, 
+            13px 12px 17px 0px #FF9527, 
+            2px 17px 17px 0px #FF0000, 
+            -9px 21px 18px 0px #FFF212, 
+            -9px 6px 11px 0px #FF0808, 
+            -11px -9px 11px 0px #FFFA17, 
+            5px 5px 15px 5px rgba(0,0,0,0);
+
+        }
+    </style>
+</head>
+<body>
+    <h2>.</h2>
+    <h2>.</h2>
+    <!-- <h1>Blind typing is the key for fast typing</h1> -->
+    <div class="container">
+        <div class="box" onclick="window.location.href = 'keyboardtest.html';">30 Seconds</div>
+        <div class="box" onclick="window.location.href = '1min.html';">1 Minute</div>
+        <div class="box" onclick="window.location.href = '2min.html';">2 Minutes</div>
+        <div class="box" onclick="window.location.href = 'choice.html';">Your own choice</div>
+    </div>
+    <h1>Blind typing is the key for fast typing</h1>
+
+</body>
+</html>
